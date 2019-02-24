@@ -50,6 +50,7 @@
   background: linear-gradient(to bottom,rgba(2,2,2,.01), rgba(99,99,99,.2)), url(2.jpg) no-repeat 50% 50%;
   background-size: cover;
   margin-top: 80px;
+  background-attachment: fixed;
 }
 
 .btn {
@@ -71,7 +72,7 @@
 }
 
 .about {
-  padding: 20px;
+  padding: 100px;
   font-size: 40px;
   text-align: left;
   letter-spacing: 2px;
@@ -91,70 +92,47 @@
   text-align: right;
   padding: 0 50px ;
   letter-spacing: 2px;
+  line-height: 1cm;
 }
 
-.slider {
-  padding-bottom: 20px;
+.slides {
+  max-width: 1200px;
+  height: 50%;
+  padding: 7rem;
 }
 
-slider {
-  display: block;
-  width: 80%;
-  height: 75vh;
-  background-color: green;
-  overflow: hidden;
-  position: absolute;
-  left: 8rem;
-}
-
-slider > * {
-  position: absolute;
-  display: block;
+.showimg {
   width: 100%;
   height: 100%;
-  background: #f5f5f5;
-  animation: slide 12s infinite;
-  overflow: hidden;
 }
 
-slide:nth-child(1) {
-  left: 0%;
-  animation-delay: -1s;
-  background-image: url(rsa-cover1.jpg);
-  background-size:  cover;
-  background-position: center; 
+footer {
+  padding: 2rem;
+  background: green;
+  display: flex;
+  justify-content: center;
 }
 
-slide:nth-child(2) {
-  animation-delay: 2s;
-  background-image: url(rsa-img1.jpg);
-  background-size:  cover;
-  background-position: center; 
+footer p {
+  color: #333;
+  font-weight: 500;
 }
 
-slide:nth-child(3) {
-  animation-delay: 5s;
-  background-image: url(rsa-img2.jpg);
-  background-size: cover;
-  background-position: center; 
+i {
+  padding: 1rem;
 }
 
-slide:nth-child(4) {
-  animation-delay: 8s;
-  background-image: url(rsa-cover2.jpg);
-  background-size:  cover;
-  background-position: center; 
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
 }
 
-@keyframes slide {
-  0% { left: 100; width: 100%;}
-  5% { left: 0%;}
-  25% { left: 0%;}
-  30% { left: -100%; width: 100%;}
-  30.0001% { left: -100%; width: 0%;}
-  100% {left: 100%; width: 0%;}
+footer a:hover {
+  color: #f5f5f5;
 }
-
 
 @media only screen and (max-width: 600px) {
   .navbarr {
@@ -180,5 +158,15 @@ slide:nth-child(4) {
   }
   .show {
     max-height: 500px;
+  }
+  .slides {
+    max-width: 90%;
+    height: 50vh;
+    padding: 2rem;
+  }
+  
+  .showimg {
+    width: 100%;
+    height: 100%;
   }
 }
