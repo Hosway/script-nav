@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery | ReelStonedAdventures</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="navbarr">
+    <div class="logo">
+    
+    </div>
+    <a class="btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    </a>
+    <div class="menu">
+      <a href="scriptnav.html">home</a>
+      <a href="gallery.html">gallery</a>
+      <a href="#works">works</a>
+      <a href="#">contact</a>
+    </div>
+    </div>
+
+    <header class="gall">
+      <div><img src="cutty.JPG"></div>
+      <div><img src="cutty-2.JPG"></div>
+      <div><img src="cutty-3.JPG"></div>
+      <div><img src="cutty-4.JPG"></div>
+      <div><img src="cutty-5.JPG"></div>
+    </header>
+
+
+    <script type="text/javascript">
+
+      $(".btn").on("click", function(){
+        $('.menu').toggleClass("show");
+      });
+      </script>
+</body>
+</html>
