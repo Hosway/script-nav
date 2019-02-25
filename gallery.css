@@ -8,7 +8,7 @@ body {
 }
 
 .navbarr {
-  position: fixed;
+  position: absolute;
   height: 95px;
   overflow: hidden;
   top: 0;
@@ -62,6 +62,65 @@ body {
   background: #333;
 }
 
+.heading-hero {
+  background: #f5f5f5;
+  color: #fff;
+  padding: 3px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallerycontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12rem;
+}
+
+.gallery-image {
+  position: relative;
+  margin: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery-image img {
+  max-width: 350px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.1);
+}
+
+footer {
+  padding: 2rem;
+  background: green;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: #333;
+  font-weight: 500;
+}
+
+i {
+  padding: 1rem;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #f5f5f5;
+}
+
 @media only screen and (max-width: 600px) {
   .navbarr {
     overflow: visible;
@@ -92,28 +151,4 @@ body {
     height: 50vh;
     padding: 2rem;
   }
-
-  header {
-    margin: .5vw;
-    font-size: 0;
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
-    -ms-flex-direction: column;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: flex;
-  }
-  
-  header div {
-    -webkit-box-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    width: 200px;
-    margin: .5vw;
-  }
-
-  header div img {
-    width: 100%;
-    height: auto;
-  }
+}
